@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Sigmar+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#search-header {
+    font-family: 'Sigmar One',
+        cursive;
+    font-size: 50px;
+    color: white;
+
+}
+
+p {
+    font-family: 'Be Vietnam Pro',
+        sans-serif;
+    color: white;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+}
+
+form,
+#form {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px; */
+    width: 100%;
+    ;
+}
+
+#search-container {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#input-zip {
+    border-radius: 8px;
+    width: 80%;
+    border: 2px solid #809F97;
+    font-family: 'Be Vietnam Pro',
+        sans-serif;
+    padding: 10px;
+    vertical-align: middle;
+    line-height: 20px;
+    border: 2px solid lightblue;
+    /* color: white; */
+}
+
+#input-submit {
+    vertical-align: middle;
+    line-height: 20px;
+    padding: 10px 30px;
+}
+
+label {
+    font-family: 'Be Vietnam Pro',
+        sans-serif;
+    color: white;
+}
+
+#radio-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#search {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./img/25501.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, .15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    gap: 30px;
+    margin: 100px;
+    height: 50%;
+    border-radius: 8px;
+
+}

@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 </head>
+
 <body>
-    <h1>Weather App</h1>
-    <p id="info"></p>
-    <form action="" id="form-info">
-        <label for="place">Place:<input type="text" name="place" id="place"></label>
-        <button type="submit"></button>
-    </form>
+    <div id="search">
+        <div id="overlay">
+            <h1 id="search-header">Weather App</h1>
+
+            <p id="info"></p>
+            <div id="form">
+                <form action="" id="form-info">
+                    <div id="search-container">
+                    <label for="place"></label>
+                    <input id="input-zip"type="text" name="place" id="place" placeholder="Zip Code">
+                    <button id="input-submit"type="submit">Submit</button>
+                    </div>
+                    <div id="radio-container">
+                        <label for="weather-days">Current<input type="radio" name="weather-days" id="current-radio"
+                                value="current"></label>
+                        <label for="weather-days">5 Days<input type="radio" name="weather-days" id="five-day-radio"
+                                value="five-day"></label>
+                        <label for="weather-days">16 Days<input type="radio" name="weather-days" id="sixteen-radio"
+                                value="sixteen-days">
+                    </div></label>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="display">
+        <h1 id="place-name"></h1>
+    </div>
+    <footer><a href='https://www.freepik.com/vectors/background'>Background vector created by starline - www.freepik.com</a></footer>
 </body>
+
 </html>

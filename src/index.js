@@ -1,3 +1,5 @@
+import "./style.css"
+
 (() => {
     let placeInput = document.getElementById("place")
     let form = document.getElementById("form-info")
