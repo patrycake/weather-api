@@ -13,15 +13,15 @@ body {
 }
 
 
-#search-header {
+#search-header,
+#place-name {
     font-family: 'Sigmar One',
         cursive;
     font-size: 50px;
     color: white;
-
 }
 
-p {
+p, span{
     font-family: 'Be Vietnam Pro',
         sans-serif;
     color: white;
@@ -30,8 +30,14 @@ p {
 button {
     padding: 10px 40px;
     border-radius: 8px;
-    background-color: white;
+    background-color: lightblue;
     border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: lightblue;
 }
 
 form,
@@ -39,26 +45,28 @@ form,
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 10px; */
-    width: 100%;
+    /* width: 100%; */
+    text-align: center;
     ;
 }
 
 #search-container {
     width: 100%;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #input-zip {
     border-radius: 8px;
-    width: 80%;
+    width: 50%;
     border: 2px solid #809F97;
     font-family: 'Be Vietnam Pro',
         sans-serif;
     padding: 10px;
     vertical-align: middle;
     line-height: 20px;
+    text-align: center;
     border: 2px solid lightblue;
-    /* color: white; */
 }
 
 #input-submit {
@@ -91,6 +99,8 @@ label {
     justify-content: center;
 }
 
+
+
 #overlay {
     background-color: rgba(0, 0, 0, .15);
     display: flex;
@@ -102,5 +112,50 @@ label {
     margin: 100px;
     height: 50%;
     border-radius: 8px;
+
+}
+
+.hidden {
+    display: none !important;
+}
+
+#display {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./img/25501.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#current {
+    padding: 50px;
+}
+#header {
+    /* line-height: 200px; */
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header h1 {
+    display: inline;
+    margin-right: 50px;
+}
+
+h2 {
+    font-family: 'Be Vietnam Pro',
+        sans-serif;
+    color: white;
+    font-size: 2em;
+}
+
+.small {
+    font-variant: small-caps;
+}
+
+.icon {
+    width: 50px;
 
 }
