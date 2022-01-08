@@ -127,17 +127,18 @@ label {
     background: url("./img/25501.jpg");
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 #current {
     padding: 50px;
+    flex-direction: column;
 }
 #header {
     /* line-height: 200px; */
     padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 #header h1 {
     display: inline;
@@ -158,4 +159,33 @@ h2 {
 .icon {
     width: 50px;
 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#temp, #sun, #wind{
+    flex-direction: column;
+    
+}
+#info-grid{
+    width: 100%;
+    margin: 100px;
+    justify-content: space-evenly;
+}
+
+footer{
+    margin: auto 0 0 0;
+    padding: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: blue;
 }

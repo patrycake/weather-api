@@ -63,18 +63,36 @@ function displayCurrent(weatherInfo) {
     // console.log("display???"+ timeConvert(weatherInfo.sys.sunrise))
     let display = document.getElementById("display");
     display.innerHTML = `
-    <div id="current">
+    <div id="current" class="container">
         <div id="header"> 
             <h1 id="place-name">${weatherInfo.name}</h1>
             <span>${weatherInfo.main.temp} </span>
         </div>
         <button id="new-search">New Search</button>
-        <p> <span id="high"></span>${weatherInfo.main.temp_max} <span id="low"></span> ${weatherInfo.main.temp_min} </p>
-        <p> <span id="sunrise"></span> ${weatherInfo.sys.sunrise} <span id="sunset"></span> ${weatherInfo.sys.sunset} </p>
+        <div id="info-grid" class="container">
+            <div id="temp" class="container"> 
+                <span id="high"></span>
+                <p>${weatherInfo.main.temp_max}</p>
+                <span id="low"></span> 
+                <p>${weatherInfo.main.temp_min} </p>
+            </div>
+            <div id="sun" class="container">
+                <span id="sunrise"></span>
+                <p>${weatherInfo.sys.sunrise}</p>
+                <span id="sunset"></span>
+                <p>${weatherInfo.sys.sunset}</p>
+            </div>
+            <div id="wind" class="container">
+                <span id="sunrise"></span>
+                <p>${weatherInfo.sys.sunrise}</p>
+                <span id="sunset"></span>
+                <p>${weatherInfo.sys.sunset}</p>
+            </div>
+        </div>
         
     </div>
-    <footer><a href='https://www.freepik.com/vectors/background'>Background vector created by starline -
-                www.freepik.com</a> <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></footer>`;
+    <footer><p><a href='https://www.freepik.com/vectors/background'>Background vector created by starline -
+                www.freepik.com</a></p> <div><p>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p></div></footer>`;
 
 
     document.getElementById("new-search").addEventListener("click", () => {
