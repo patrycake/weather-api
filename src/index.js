@@ -14,6 +14,8 @@ import sunrise from "./img/sunrise.png"
 import sunset from "./img/sunset.png"
 import high from "./img/hightemp.png"
 import low from "./img/lowtemp.png"
+import humidity from "./img/drop.png"
+import wind from "./img/windy.png"
 
 (() => {
     let zipInput = document.getElementById("input-zip")
@@ -71,22 +73,34 @@ function displayCurrent(weatherInfo) {
         <button id="new-search">New Search</button>
         <div id="info-grid" class="container">
             <div id="temp" class="container"> 
-                <span id="high"></span>
-                <p>${weatherInfo.main.temp_max}</p>
-                <span id="low"></span> 
-                <p>${weatherInfo.main.temp_min} </p>
+                <div class="card">
+                    <span id="high"></span>
+                    <p>${weatherInfo.main.temp_max}</p>
+                </div>
+                <div class="card">
+                    <span id="low"></span>
+                    <p>${weatherInfo.main.temp_min} </p>
+                </div>
             </div>
             <div id="sun" class="container">
-                <span id="sunrise"></span>
-                <p>${weatherInfo.sys.sunrise}</p>
-                <span id="sunset"></span>
-                <p>${weatherInfo.sys.sunset}</p>
+                <div class="card">
+                    <span id="sunrise"></span>
+                    <p>${weatherInfo.sys.sunrise}</p>
+                </div>
+                <div class="card">
+                    <span id="sunset"></span>
+                    <p>${weatherInfo.sys.sunset}</p>
+                </div>
             </div>
-            <div id="wind" class="container">
-                <span id="sunrise"></span>
-                <p>${weatherInfo.sys.sunrise}</p>
-                <span id="sunset"></span>
-                <p>${weatherInfo.sys.sunset}</p>
+            <div id="misc" class="container">
+                <div class="card">
+                    <span id="humidity"></span>
+                    <p>${weatherInfo.main.humidity}</p>
+                </div>
+                <div class="card">
+                    <span id="wind"></span>
+                    <p>${weatherInfo.wind.speed}</p>
+                </div>
             </div>
         </div>
         
@@ -103,6 +117,8 @@ function displayCurrent(weatherInfo) {
     iconPicker("Sunset", document.getElementById("sunset"))
     iconPicker("High", document.getElementById("high"))
     iconPicker("Low", document.getElementById("low"))
+    iconPicker("Humidity", document.getElementById("humidity"))
+    iconPicker("Wind", document.getElementById("wind"))
 }
 
 function timeConvert(unixTime) {
@@ -148,6 +164,11 @@ function iconPicker(description, parent) {
         case "High":
             icon.src = high;
             break;
+        case "Humidity":
+            icon.src = humidity;
+            break;
+        case "Wind":
+            icon.src = wind;
     }
     parent.appendChild(icon)
 }

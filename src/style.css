@@ -132,7 +132,7 @@ label {
 }
 
 #current {
-    padding: 50px;
+    margin: 50px 50px 0px 50px;
     flex-direction: column;
 }
 #header {
@@ -166,8 +166,9 @@ h2 {
     align-items: center;
     gap: 10px;
 }
-#temp, #sun, #wind{
+#temp, #sun, #misc{
     flex-direction: column;
+    gap: 30px;
     
 }
 #info-grid{
@@ -187,5 +188,17 @@ a{
     color: white;
 }
 a:hover{
+    color: blue;
+}
+
+.card{
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .15);
+    text-align: center;
+}
+
+.card p {
     color: blue;
 }
