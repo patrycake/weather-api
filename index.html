@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="hot.bundle.js"></script><script defer src="client.bundle.js"></script><link href="index.css" rel="stylesheet"></head>
+
+<body>
+    <div id="search">
+        <div id="temp-type">
+            <img id="farenheit" class="icon" src=00999d6bb7229808a3f2.png alt="" srcset="">
+            <img id="celsius" class="icon" src=aa26ed08d3490628c0bf.png alt="" srcset="">
+        </div>
+        <div id="overlay">
+            <h1 id="search-header">Weather App</h1>
+            <p id="info"></p>
+            <div id="form">
+                <form action="" id="form-info">
+                    <div id="search-container">
+                        <label for="place"></label>
+                        <input id="input-zip" type="text" name="place" placeholder="Zip Code">
+                        <button id="input-submit" type="submit">Submit</button>
+                    </div>
+                    <div id="radio-container">
+                        <label for="weather-days">Current<input type="radio" name="weather-days" id="current-radio"
+                                value="current" checked="checked"></label>
+                        <label for="weather-days">5 Days<input type="radio" name="weather-days" id="five-day-radio"
+                                value="five-day"></label>
+                    </div></label>
+
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p><a href='https://www.freepik.com/vectors/background'>Background vector created by starline -
+                    www.freepik.com</a></p>
+        </footer>
+    </div>
+    <div id="display" class="hidden">
+
+    </div>
+
+</body>
+
+</html>

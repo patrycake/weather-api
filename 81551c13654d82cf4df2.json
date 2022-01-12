@@ -1,0 +1,42 @@
+{
+    "base": "stations",
+    "clouds": {
+        "all": 0,
+        "cod": 200
+    },
+    "coord": {
+        "lat": 28.5697,
+        "lon": -80.8191,
+        "dt": 1641585019,
+        "id": 0
+    },
+    "main": {
+        "feels_like": 71.2,
+        "humidity": 73,
+        "pressure": 1021,
+        "temp": 70.97,
+        "temp_max": 76.17,
+        "temp_min": 68.94
+    },
+    "name": "Titusville",
+    "sys": {
+        "country": "US",
+        "id": 2001949,
+        "sunrise": 1641557816,
+        "sunset": 1641595309,
+        "type": 2
+    },
+    "timezone": -18000,
+    "visibility": 10000,
+    "weather": [{
+        "description": "clear sky",
+        "icon": "01d",
+        "id": 800,
+        "main": "Clear"
+    }],
+    "wind": {
+        "deg": 93,
+        "gust": 4,
+        "speed": 4
+    }
+}
