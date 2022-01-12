@@ -12,6 +12,24 @@ body {
 
 }
 
+#temp-type {
+    margin: 0 0 0 auto;
+    /* float: left; */
+}
+
+#temp-type img {
+    margin: 10px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+
+#temp-type img:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .15);
+}
+
+.active-temp {
+    border: 2px solid lightblue;
+}
 
 #search-header,
 #place-name {
@@ -21,7 +39,8 @@ body {
     color: white;
 }
 
-p, span{
+p,
+span {
     font-family: 'Be Vietnam Pro',
         sans-serif;
     color: white;
@@ -96,10 +115,9 @@ label {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
-
-
 
 #overlay {
     background-color: rgba(0, 0, 0, .15);
@@ -107,12 +125,10 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 150px;
+    padding: 50px 150px;
     gap: 30px;
-    margin: 100px;
     height: 50%;
     border-radius: 8px;
-
 }
 
 .hidden {
@@ -123,25 +139,30 @@ label {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background: url("./img/25501.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #current {
     margin: 50px 50px 0px 50px;
     flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
 }
+
 #header {
     /* line-height: 200px; */
-    padding: 50px;
-   
+    /* padding: 50px; */
+    text-align: center;
 }
+
 #header h1 {
-    display: inline;
+    /* display: inline; */
     margin-right: 50px;
 }
 
@@ -160,45 +181,65 @@ h2 {
     width: 50px;
 
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-}
-#temp, #sun, #misc{
-    flex-direction: column;
     gap: 30px;
-    
-}
-#info-grid{
-    width: 100%;
-    margin: 100px;
-    justify-content: space-evenly;
 }
 
-footer{
-    margin: auto 0 0 0;
+.temp,
+#sun,
+.misc {
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+#info-grid {
+    width: 350px;
+    /* padding: 50px 50px 0px 50px; */
+    justify-content: center;
+}
+
+footer {
+    /* margin: auto 0 0 0; */
     padding: 20px;
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-a:hover{
+
+a:hover {
     color: blue;
 }
 
-.card{
+.card {
     background-color: white;
-    padding: 50px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, .15);
     text-align: center;
+    width: 100px;
+    height: 100px;
+    flex: auto;
 }
 
 .card p {
     color: blue;
+}
+
+#forecast{
+    flex-direction: column;
+}
+#forecast-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
 }

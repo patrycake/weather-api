@@ -10,6 +10,10 @@
 
 <body>
     <div id="search">
+        <div id="temp-type">
+            <img id="farenheit" class="icon" src=<%=require("./img/farenheit.png")%> alt="" srcset="">
+            <img id="celsius" class="icon" src=<%=require("./img/celsius.png")%> alt="" srcset="">
+        </div>
         <div id="overlay">
             <h1 id="search-header">Weather App</h1>
             <p id="info"></p>
@@ -25,18 +29,18 @@
                                 value="current" checked="checked"></label>
                         <label for="weather-days">5 Days<input type="radio" name="weather-days" id="five-day-radio"
                                 value="five-day"></label>
-                        <label for="weather-days">16 Days<input type="radio" name="weather-days" id="sixteen-radio"
-                                value="sixteen-days">
                     </div></label>
 
                 </form>
             </div>
         </div>
-        <footer><p><a href='https://www.freepik.com/vectors/background'>Background vector created by starline -
-                www.freepik.com</a></p></footer>
+        <footer>
+            <p><a href='https://www.freepik.com/vectors/background'>Background vector created by starline -
+                    www.freepik.com</a></p>
+        </footer>
     </div>
     <div id="display" class="hidden">
-        
+
     </div>
 
 </body>
