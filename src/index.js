@@ -30,8 +30,8 @@ import wind from "./img/windy.png"
     async function getWeatherInfo(place, unitsFar) {
         try {
             let url = ``;
-            let urlFive = `http://api.openweathermap.org/data/2.5/forecast?zip=${place},us&appid=5967bc4f13171c4f3c4c4559633ef213` // 5 day
-            let urlCurrent = `http://api.openweathermap.org/data/2.5/weather?zip=${place},us&units=${unitsFar ? "imperial" : "metric"}&appid=5967bc4f13171c4f3c4c4559633ef213`;
+            let urlFive = `https://api.openweathermap.org/data/2.5/forecast?zip=${place},us&appid=5967bc4f13171c4f3c4c4559633ef213` // 5 day
+            let urlCurrent = `https://api.openweathermap.org/data/2.5/weather?zip=${place},us&units=${unitsFar ? "imperial" : "metric"}&appid=5967bc4f13171c4f3c4c4559633ef213`;
             if (radioCurrent.checked) url = urlCurrent;
             if (radioFive.checked) url = urlFive;
             console.log(url)
